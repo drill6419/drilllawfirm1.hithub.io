@@ -1,0 +1,63 @@
+// USERS: email + PIN
+const users = [
+{ email: "user1@drilllawfirm.com", pin: "1234" },
+{ email: "user2@drilllawfirm.com", pin: "2345" },
+{ email: "user3@drilllawfirm.com", pin: "3456" },
+{ email: "user4@drilllawfirm.com", pin: "4567" },
+{ email: "user5@drilllawfirm.com", pin: "5678" },
+];
+
+// LOGIN FORM
+const loginForm = document.getElementById("loginForm");
+if (loginForm) {
+loginForm.addEventListener("submit", function(e) {
+e.preventDefault();
+const email = document.getElementById("email").value;
+const pin = document.getElementById("pin").value;
+
+const user = users.find(u => u.email === email && u.pin === pin);
+if (user) {
+localStorage.setItem("loggedInUser", email);
+window.location.href = "dashboard.html";
+} else {
+document.getElementById("error").textContent = "Invalid Email or PIN!";
+}
+});
+}
+
+// DASHBOARD
+const userEmailSpan = document.getElementById("userEmail");
+if (userEmailSpan) {
+const email = localStorage.getItem("loggedInUser");
+if (!email) {
+window.location.href = "login.html";
+} else {
+userEmailSpan.textContent = email;
+}
+}
+
+// LOGOUT
+function logout() {
+localStorage.removeItem("loggedInUser");
+}
+
+// INQUIRY FORM
+const inquiryForm = document.getElementById("inquiryForm");
+if (inquiryForm) {
+inquiryForm.addEventListener("submit", function(e) {
+e.preventDefault();
+// Get values
+const name = document.getElementById("name").value;
+const email = document.getElementById("emailInquiry").value;
+const message = document.getElementById("message").value;
+
+// Store inquiries in localStorage (for demo purposes)
+let inquiries = JSON.parse(localStorage.getItem("inquiries")) || [];
+inquiries.push({ name, email, message, date: new Date().toLocaleString() });
+localStorage.setItem("inquiries", JSON.stringify(inquiries));
+
+// Reset form
+inquiryForm.reset();
+document.getElementById("success").textContent = "Inquiry submitted successfully!";
+});
+}

@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Drill Law Firm - Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="login-container">
+<h2>Login</h2>
+<form id="loginForm">
+<label for="email">Email:</label>
+<input type="email" id="email" required>
+
+<label for="pin">PIN:</label>
+<input type="password" id="pin" maxlength="4" required>
+
+<button type="submit">Login</button>
+</form>
+<p id="error" style="color:#d4af37;"></p>
+</div>

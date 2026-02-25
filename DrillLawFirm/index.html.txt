@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Drill Law Firm</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Drill Law Firm</h1>
+<nav>
+<a href="login.html">Login</a>
+</nav>
+</header>
+
+<div class="container">
+<h2>About Drill Law Firm</h2>
+<p>Drill Law Firm is an independent legal practice dedicated to representing individuals and families in probate matters, estate administration, property transfers, and inheritance procedures. Our commitment is to provide professional guidance, protect client rights, and ensure that every legal process is handled with integrity and transparency.</p>
+
+<h2>Practice Areas</h2>
+<ul>
+<li>Probate & Estate Administration</li>
+<li>Property Transfer & Title Regularization</li>
+<li>Wills & Estate Planning</li>
+<li>Family Law</li>
+<li>Civil Litigation</li>
+<li>Real Estate Law</li>
+<li>Contract Drafting & Review</li>
+<li>Corporate and Commercial Law</li>
+<li>Power of Attorney Services</li>
+<li>Legal Consultations & Advisory</li>
+</ul>
+
+<h2>Office Address</h2>
+<p>Via Monte Napoleone 10, Milano, Italy</p>
+
+<h2>Email</h2>
+<p>drilllawfirm.probate22@gmail.com</p>
+
+<h2>Lawyer Team</h2>
+<ul>
+<li>Alessandro Conti</li>
+<li>Matteo Ricci</li>
+<li>Giulia Bianchi</li>
+<li>Lorenzo Moretti</li>
+<li>Francesca Romano</li>
+<li>Marco De Santis</li>
+<li>Elena Ferraro</li>
+<li>Jonathan Reed</li>
+<li>Melissa Thompson</li>
+</ul>
+
+<h2>Mission Statement</h2>
+<p>Our mission is to deliver trusted legal services rooted in professionalism, ethics, and clarity. We guide individuals through complex legal procedures, especially in probate and estate matters, ensuring fair representation and dependable legal support.</p>
+</div>
+
+<footer>
+&copy; 2026 Drill Law Firm. All Rights Reserved.
+</footer>
+</body>
+</html>

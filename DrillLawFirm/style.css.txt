@@ -1,0 +1,87 @@
+/* GENERAL STYLES */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #111;
+color: #f5f5f5;
+}
+
+a {
+color: #d4af37;
+text-decoration: none;
+}
+
+header, footer {
+background-color: #000;
+color: #f5f5f5;
+padding: 20px;
+text-align: center;
+}
+
+/* BUTTONS */
+button {
+background-color: #d4af37;
+color: #111;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+font-weight: bold;
+}
+
+button:hover {
+background-color: #b9952f;
+}
+
+/* CONTAINERS */
+.container {
+width: 90%;
+max-width: 1000px;
+margin: 20px auto;
+padding: 20px;
+background-color: #1a1a1a;
+border-radius: 10px;
+}
+
+/* FORMS */
+input, textarea {
+width: 100%;
+padding: 10px;
+margin: 8px 0;
+border-radius: 5px;
+border: 1px solid #333;
+background-color: #111;
+color: #f5f5f5;
+}
+
+label {
+font-weight: bold;
+}
+
+/* DASHBOARD TABLE */
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+table, th, td {
+border: 1px solid #333;
+}
+
+th, td {
+padding: 10px;
+text-align: left;
+}
+th {
+background-color: #222;
+}
+
+/* LOGIN PAGE */
+.login-container {
+max-width: 400px;
+margin: 100px auto;
+padding: 30px;
+background-color: #1a1a1a;
+border-radius: 10px;
+}
